@@ -1,0 +1,59 @@
+[Format]      =  1
+[Precision]   =  1e-008
+[MinAngle]    =  30
+[Depth]       =  1
+[LengthUnits] =  centimeters
+[ProblemType] =  planar
+[Coordinates] =  cartesian
+[Comment]     =  "Add comments here."
+[PointProps]   = 0
+[BdryProps]   = 0
+[BlockProps]  = 2
+  <BeginBlock>
+    <BlockName> = "e0"
+    <ex> = 1
+    <ey> = 1
+    <qv> = 0
+  <EndBlock>
+  <BeginBlock>
+    <BlockName> = "e20"
+    <ex> = 12
+    <ey> = 12
+    <qv> = 0
+  <EndBlock>
+[ConductorProps]  = 2
+  <BeginConductor>
+    <ConductorName> = "potencial_0"
+    <Vc> = 0
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+  <BeginConductor>
+    <ConductorName> = "pot_10V"
+    <Vc> = 10
+    <qc> = 0
+    <ConductorType> = 1
+  <EndConductor>
+[NumPoints] = 8
+0	0	0	0	0
+10	0	0	0	0
+0	10	0	0	0
+10	10	0	0	0
+3	7	0	0	0
+7	7	0	0	0
+0	4	0	0	0
+10	4	0	0	0
+[NumSegments] = 8
+2	3	-1	0	0	0	1
+3	7	-1	0	0	0	1
+1	0	-1	0	0	0	1
+0	6	-1	0	0	0	1
+4	5	-1	0	0	0	2
+6	2	-1	0	0	0	1
+7	1	-1	0	0	0	1
+6	7	-1	0	0	0	0
+[NumArcSegments] = 0
+[NumHoles] = 0
+[NumBlockLabels] = 2
+3.3999999999999999	4.2000000000000002	1	-1	0	0
+4.75	2.5	2	-1	0	0
